@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="cruds">
+<div class="head">
+
+    <h2>CRUDS</h1> <br>
+        <h3>CREATE READ UPDATE DELETE SEARCH</h3>
+
+    </div>
+    
+    <div class="input">
+        <input id='title' type="text" placeholder="Title"><br>
+         <div class="price"> 
+        <input onkeyup= getTotal() id='price'type="number" placeholder="price">
+        <input onkeyup= getTotal() id='taxs' type="number" placeholder="taxs">
+        <input onkeyup= getTotal() id ='ads'type="number" placeholder="ads">
+        <input onkeyup= getTotal() id ='discount'type="number" placeholder="discount">
+         <small id = total></small>
+    </div>
+
+        <input id="category" type="text" placeholder="category">
+        <input id='count'type="number" placeholder="count">
+
+       <button class="create" id="create">Create</button>
+    
+    
+    </div>
+
+
+<div class="outputs">
+    
+<div class="search">
+<input onkeyup="searchitems(value)" type="text" id="searchtxt" placeholder="Search">
+<div class="btnsearch">
+    <button onclick="getsearchmood(this.id)" id="searchtitle">Search By Title</button>
+<button     onclick="getsearchmood(this.id)" id="searchcategory">Search By Category</button> 
+</div>
+<div id="deleteAll"></div>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>price</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tbody id="tbody">
+
+
+    </tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+
+<script src="mySpace.js"></script>
+</body>
+</html>
